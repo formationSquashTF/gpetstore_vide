@@ -27,8 +27,7 @@ public class AnnotationSteps {
 	@Given("I visit the Jpetstore web site")
 	public void i_visit_the_Jpetstore_web_site() {
 	    // Write code here that turns the phrase above into concrete actions
-		System.setProperty("webdriver.gecko.driver", "src/test/resources/squash/geckodriver.exe");
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//navigation
 		driver.get("https://petstore.octoperf.com/");
